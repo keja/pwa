@@ -49,6 +49,8 @@ module.exports = {
       'optionalDependencies': ['test/unit/index.js']
     }],
     {{/if_eq}}
+    //ignore trailing commas
+    'comma-dangle': ["error", "only-multiline"],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
