@@ -4,7 +4,7 @@ import Vuex from "vuex"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 export const store = new Vuex.Store({
   //All data goes in to this object
   state: {
-    count: 0{#if_eq lintConfig "airbnb"}},{{/if_eq}} 
+    count: 0{{#if_eq lintConfig "airbnb"}},{{/if_eq}} 
   },
   
   //all changing of data happens in here (no async)
