@@ -31,7 +31,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style lang="sass">
+$color: #35495E;
+
 h1, h2 {
   font-weight: normal;
 }
@@ -47,6 +49,6 @@ li {
 }
 
 a {
-  color: #35495E;
+  color: $color;
 }
 </style>
