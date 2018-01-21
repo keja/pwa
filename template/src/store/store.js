@@ -1,5 +1,5 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from "vue"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}  
+import Vuex from "vuex"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}  
 
 export const store = new Vuex.Store({
   //All data goes in to this object
@@ -10,8 +10,8 @@ export const store = new Vuex.Store({
   //all changing of data happens in here (no async)
   mutations: {
     increment (state) {
-      state.count++
-    }
+      state.count++{{#if_eq lintConfig "airbnb"}};{{/if_eq}} 
+    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}  
   },
   
   //if async is needed in datachaingn make method here an call the mutation when it is done.
@@ -22,7 +22,7 @@ export const store = new Vuex.Store({
   //if data needs to be returned in another format e.g.
   getters: {
     getCount (state){
-      return state.count
-    }
-  }
-})
+      return state.count{{#if_eq lintConfig "airbnb"}};{{/if_eq}} 
+    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}  
+  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}  
+}){{#if_eq lintConfig "airbnb"}};{{/if_eq}}  
